@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto – Letras Cursivas</title>
+<meta name="description" content="Contacta con el equipo de Letras Cursivas. Formulario de consulta o correo electrónico para preguntas sobre el generador de fuentes.">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://letrascursivas.es/contact.html">
+<meta property="og:title" content="Contacto – Letras Cursivas">
+<meta property="og:description" content="Contacta con el equipo de Letras Cursivas. Formulario de consulta o correo electrónico para preguntas sobre el generador de fuentes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://letrascursivas.es/contact.html">
+<meta property="og:image" content="https://letrascursivas.es/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+<!-- JSON-LD Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contacto - Letras Cursivas",
+  "description": "Formulario de contacto para el generador de letras cursivas. Preguntas y sugerencias sobre el servicio.",
+  "url": "https://letrascursivas.es/contact.html",
+  "inLanguage": "es",
+  "isPartOf": { "@id": "https://letrascursivas.es/#website" },
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Letras Cursivas",
+    "url": "https://letrascursivas.es/",
+    "email": "hola@letrascursivas.es",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hola@letrascursivas.es",
+      "contactType": "customer support",
+      "availableLanguage": "es"
+    }
+  }
+}
+</script>
+<!-- /JSON-LD Schema Markup -->
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap wide topbar-inner">
+    <a href="/" class="brand" aria-label="Inicio"><img src="icon.svg" alt="" width="28" height="28"><span>Letras Cursivas</span></a>
+    <nav class="nav">
+      <a href="/">Generador</a>
+      <a href="/#como-usar">Cómo usar</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap content">
+    <h1>Contacto</h1>
+
+    <p>Gracias por visitar <strong>Letras Cursivas</strong>. Si tienes preguntas, sugerencias o deseas ponerte en contacto con nosotros, aquí tienes las formas de hacerlo.</p>
+
+    <h2>Formulario de contacto</h2>
+    <p>Completa el formulario y se abrirá tu aplicación de correo con el mensaje preparado. Así no guardamos tus datos en el sitio.</p>
+
+    <form class="contact-form" id="contactForm" action="mailto:hola@letrascursivas.es" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" autocomplete="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Enviar mensaje</button>
+    </form>
+
+    <h2>Correo electrónico directo</h2>
+    <p>También puedes escribirnos directamente a:</p>
+    <p><a href="mailto:hola@letrascursivas.es">hola@letrascursivas.es</a></p>
+
+    <p>Nos esforzamos por responder a todos los mensajes en un plazo de 3-5 días hábiles.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    © <span id="year"></span> Generador de Letras Cursivas · 500 fuentes para copiar y pegar
+    <div class="footer-links">
+      <a href="/#generador">Generador</a>
+      <a href="/#como-usar">Cómo usar</a>
+      <a href="/#faq">Preguntas</a>
+      <a href="privacy.html">Política de Privacidad</a>
+      <a href="contact.html">Contacto</a>
+      <a href="disclaimer.html">Aviso Legal</a>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast"><i data-lucide="check"></i><span>¡Copiado!</span></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
